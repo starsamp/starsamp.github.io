@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPACESAMP — Space Health Food Technology | Brussels</title>
+  <meta name="description" content="SPACESAMP brings aerospace food technology to everyday life. Premium space-grade nutrition, sustainable innovation, and the future of healthy eating — from Brussels to the world.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- 样式 -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon：内联 SVG 深空图标 -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%2300e5ff' stroke-width='4'/><rect x='35' y='35' width='30' height='30' rx='4' fill='none' stroke='%237c4dff' stroke-width='3' transform='rotate(45 50 50)'/></svg>">
+</head>
+<body>
+
+  <!-- 星空粒子背景 -->
+  <canvas id="star-canvas"></canvas>
+
+  <!-- ===== 导航栏 ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-icon"></div>
+        <span class="nav-logo-text">SPACESAMP</span>
+      </a>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#restaurant">Restaurant</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#sustainability">Mission</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+      <a href="#contact" class="nav-cta">Get Started</a>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero 区 ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-banner.png" alt="Deep space food technology">
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-badge">
+        ◆ Brussels, Belgium · Since 2024
+      </div>
+      
+      <h1 class="hero-title">
+        Bringing <span class="gradient-text">Space Nutrition</span><br>
+        Down to Earth
+      </h1>
+      
+      <p class="hero-subtitle">
+        Pioneering aerospace-grade food technology for everyday life.
+        Premium nutrition, sustainable innovation, and the future of healthy eating.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">
+          Explore Products →
+        </a>
+        <a href="#about" class="btn-secondary">
+          Our Story ↓
+        </a>
+      </div>
+    </div>
+    
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== 太空餐厅（置顶展示） ===== -->
+  <section class="restaurant" id="restaurant">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-subtitle">Coming Soon</div>
+        <h2 class="section-title">The SPACESAMP Restaurant</h2>
+        <p class="section-description">
+          A groundbreaking dining experience where space food meets five-star gastronomy — 
+          fusing cuisine, space tourism, and astronaut simulation into one destination.
+        </p>
+      </div>
+      
+      <div class="restaurant-showcase reveal">
+        <img src="images/restaurant-concept.jpg" alt="SPACESAMP Space Restaurant Concept">
+        <div class="restaurant-overlay">
+          <h3>Dine Among the Stars</h3>
+          <p>
+            Our flagship space restaurant merges fine dining, immersive space tourism, 
+            and astronaut experience into a consumption center of the future. 
+            Step inside a starship-inspired venue where every meal is an interstellar journey.
+          </p>
+        </div>
+      </div>
+      
+      <div class="restaurant-features">
+        <div class="restaurant-feature reveal">
+          <span class="feature-icon">🍽️</span>
+          <h4>Astro-Gastronomy</h4>
+          <p>Multi-course menus crafted with space food technology, served in a zero-gravity-inspired ambiance.</p>
+        </div>
+        <div class="restaurant-feature reveal">
+          <span class="feature-icon">🛸</span>
+          <h4>Space Tour Simulation</h4>
+          <p>Immersive VR experiences that transport you to orbiting stations while you dine on space-grade cuisine.</p>
+        </div>
+        <div class="restaurant-feature reveal">
+          <span class="feature-icon">👨‍🚀</span>
+          <h4>Astronaut Experience</h4>
+          <p>Hands-on astronaut training modules — from food preparation in microgravity to suit-up simulations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 关于我们 ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-subtitle">Who We Are</div>
+        <h2 class="section-title">Where Aerospace Meets Gastronomy</h2>
+        <p class="section-description">
+          Headquartered in Brussels, SPACESAMP transforms astronaut food science into 
+          premium civilian nutrition — without sacrificing natural flavor.
+        </p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <img src="images/lab-sustainability.png" alt="SPACESAMP Advanced Food Laboratory">
+        </div>
+        
+        <div class="about-text reveal-right">
+          <h3>The Future of Food, Today</h3>
+          <p>
+            SPACESAMP is a Brussels-based space food development company dedicated to 
+            civilianizing astronaut nutrition. We integrate advanced food processing, 
+            health-optimized ingredients, and dietary supplementation into a holistic 
+            approach that's both scientific and delicious.
+          </p>
+          <p>
+            Our philosophy bridges cutting-edge aerospace technology with a deep respect 
+            for natural ingredients. We believe the best nutrition should be standardized 
+            for safety and efficiency — yet never compromise on taste or the innate 
+            qualities of whole foods.
+          </p>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="50">0</span>
+              <span class="stat-label">Products</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="12">0</span>
+              <span class="stat-label">Countries</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="98">0</span>
+              <span class="stat-label">% Natural</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 产品展示 ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-subtitle">Product Lines</div>
+        <h2 class="section-title">Space-Grade Nutrition for Everyone</h2>
+        <p class="section-description">
+          From freeze-dried gourmet meals to advanced dietary supplements — 
+          every product is engineered with aerospace precision and natural integrity.
+        </p>
+      </div>
+      
+      <div class="products-grid">
+        <!-- 产品卡片 1 -->
+        <div class="product-card reveal">
+          <div class="product-card-image">
+            <img src="images/space-food-products.png" alt="Orbital Meal Kits">
+            <span class="product-tag">Bestseller</span>
+          </div>
+          <div class="product-card-content">
+            <h4>Orbital Meal Kits</h4>
+            <p>Complete freeze-dried gourmet meals with optimal macro ratios, designed using NASA-grade preservation technology.</p>
+            <div class="product-card-footer">
+              <a href="#" class="learn-more">Learn More →</a>
+              <span class="product-icon">🚀</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 产品卡片 2 -->
+        <div class="product-card reveal">
+          <div class="product-card-image">
+            <img src="images/astronaut-dining.png" alt="NutriSync Supplements">
+            <span class="product-tag">New</span>
+          </div>
+          <div class="product-card-content">
+            <h4>NutriSync Supplements</h4>
+            <p>Precision-formulated dietary supplements combining space nutrition research with bioavailable natural compounds.</p>
+            <div class="product-card-footer">
+              <a href="#" class="learn-more">Learn More →</a>
+              <span class="product-icon">⚡</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 产品卡片 3 -->
+        <div class="product-card reveal">
+          <div class="product-card-image">
+            <img src="images/lab-sustainability.png" alt="Zero-G Snack Bars">
+            <span class="product-tag">Eco</span>
+          </div>
+          <div class="product-card-content">
+            <h4>Zero-G Snack Bars</h4>
+            <p>Ultra-compact, carbon-neutral energy bars made with upcycled superfoods and zero-waste processing methods.</p>
+            <div class="product-card-footer">
+              <a href="#" class="learn-more">Learn More →</a>
+              <span class="product-icon">🌿</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== 可持续发展 ===== -->
+  <section class="sustainability" id="sustainability">
+    <div class="container">
+      <div class="sustainability-grid">
+        <div class="sustainability-content reveal-left">
+          <div class="section-subtitle">Our Mission</div>
+          <h3>Nourishing Earth, Reaching for Stars</h3>
+          <p>
+            SPACESAMP is committed to environmental stewardship, carbon reduction, 
+            and advancing open-source food innovation. We adopt a community-synced, 
+            collaborative approach to building trustworthy, safe, and efficient 
+            fast-moving consumer food channels.
+          </p>
+          <p>
+            While standardizing for scale, we never abandon the natural essence 
+            and deliciousness at the heart of real food.
+          </p>
+          
+          <div class="sustainability-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon">🌍</div>
+              <div class="pillar-text">
+                <h5>Carbon Neutral Operations</h5>
+                <p>Net-zero emissions across our entire supply chain by 2030.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon">🔬</div>
+              <div class="pillar-text">
+                <h5>Open-Source Innovation</h5>
+                <p>Community-driven R&amp;D for transparent, accessible food science.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon">♻️</div>
+              <div class="pillar-text">
+                <h5>Zero-Waste Processing</h5>
+                <p>100% upcycled ingredients and fully recyclable packaging.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon">🤝</div>
+              <div class="pillar-text">
+                <h5>Community Collaboration</h5>
+                <p>Synchronized community engagement for shared food innovation goals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sustainability-image reveal-right">
+          <img src="images/astronaut-dining.png" alt="Sustainable space food development">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <div class="nav-logo-icon"></div>
+            <span class="nav-logo-text">SPACESAMP</span>
+          </a>
+          <p>
+            Pioneering aerospace food technology for a healthier, more 
+            sustainable world. From Brussels to the cosmos.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter / X">𝕏</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#">Orbital Meal Kits</a></li>
+            <li><a href="#">NutriSync Supplements</a></li>
+            <li><a href="#">Zero-G Snack Bars</a></li>
+            <li><a href="#">Bulk Orders</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#restaurant">Space Restaurant</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@spacesamp.com">hello@spacesamp.com</a></li>
+            <li><a href="tel:+3225551234">+32 2 555 1234</a></li>
+            <li><a href="#">Brussels, Belgium</a></li>
+            <li><a href="#">Press Kit</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 SPACESAMP. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
